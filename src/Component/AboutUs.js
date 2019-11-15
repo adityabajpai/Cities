@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Style/aboutUs.css';
-import { Card, CardBody, CardHeader, Button } from 'reactstrap';
+import { Card, CardBody, CardHeader } from 'reactstrap';
 import { Form } from 'react-bootstrap';
 
 class AboutUs extends React.Component{
