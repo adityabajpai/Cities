@@ -59,15 +59,15 @@ class HeaderComponent extends React.Component{
             <div>
                 <Navbar bg="light" expand="lg" fixed="top">
                     <span className="open-slide">
-                        <a href="#" onClick={this.openSlideMenu}>
+                        <a href="/" onClick={this.openSlideMenu}>
                             <svg width="30" height="30">
                                 <path d="M0,5 30,5" stroke="#000" strokeWidth="3"/>
                                 <path d="M0,14 30,14" stroke="#000" strokeWidth="3"/>
                                 <path d="M0,23 30,23" stroke="#000" strokeWidth="3"/>
                             </svg>
                         </a>
-                    </span>
-                    <Navbar.Brand href="#home">
+                    </span>&nbsp;&nbsp;&nbsp;
+                    <Navbar.Brand href="/">
                         <img
                         alt=""
                         src={logo}
@@ -89,13 +89,13 @@ class HeaderComponent extends React.Component{
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                        <Nav.Link href="#exploreCities">Explore Cities</Nav.Link>
-                        <Nav.Link href="#exploreIslands">Explore Islands</Nav.Link>
-                        <Nav.Link href="#exploreForests">Explore Forests</Nav.Link>
-                        <Nav.Link href="#exploreDeserts">Explore Deserts</Nav.Link>
-                        <Nav.Link href="#uploadPlace">Upload Place</Nav.Link>
-                        <Nav.Link href="#bloggers">Bloggers</Nav.Link>
-                        <Nav.Link href="#aboutUs">About Us</Nav.Link>
+                        <Nav.Link href="exploreCities">Explore Cities</Nav.Link>
+                        <Nav.Link href="exploreIslands">Explore Islands</Nav.Link>
+                        <Nav.Link href="exploreForests">Explore Forests</Nav.Link>
+                        <Nav.Link href="exploreDeserts">Explore Deserts</Nav.Link>
+                        <Nav.Link href="uploadPlace">Upload Place</Nav.Link>
+                        <Nav.Link href="bloggers">Bloggers</Nav.Link>
+                        <Nav.Link href="aboutUs">About Us</Nav.Link>
                         </Nav>
                         <Form inline>
                         <FormControl type="text" placeholder="Search for places" className="mr-sm" />

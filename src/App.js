@@ -1,18 +1,15 @@
 import React from 'react';
 import './App.css';
-import HeaderComponent from './Component/HeaderComponent';
-import SlideShow from './Component/SliderComponent';
-import MainComponent from './Component/MainComponent';
-import FooterComponent from './Component/FooterComponent';
+import {BrowserRouter} from 'react-router-dom';
+import LoadComponent from './Component/LoadComponent';
 
 function App() {
   return (
-    <div>
-      <HeaderComponent/>
-      <SlideShow/>
-      <MainComponent />
-      <FooterComponent/>
-    </div>
+    <BrowserRouter>
+        <div>
+            <LoadComponent />
+        </div >
+    </BrowserRouter>
   );
 }
 

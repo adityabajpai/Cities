@@ -1,4 +1,7 @@
 import React from 'react';
+import HeaderComponent from './HeaderComponent';
+import SlideShow from './SliderComponent';
+import FooterComponent from './FooterComponent';
 import {
   Card, Button, CardImg, CardTitle, CardText, CardDeck, CardBody} from 'reactstrap';
 import '../Style/mainComponent.css'
@@ -11,33 +14,35 @@ class MainComponent extends React.Component{
 
     render(){
         return (
-            <div className="design">
-                <CardDeck>
-                    <Card>
-                    <CardImg top width="100%" height="300px" src="https://assets.entrepreneur.com/content/3x2/2000/20150513235008-new-york-city-life-sunrise-skyline-sunset.jpeg?width=1000" alt="Card image cap" />
-                    <CardBody>
-                        <CardTitle><b>Cities</b></CardTitle>
-                        <CardText>{cities}</CardText>
-                        <Button>Explore Cities</Button>
-                    </CardBody>
-                    </Card>
-                    <Card>
-                    <CardImg top width="100%" height="300px" src="https://www.bestattravel.co.uk/the-edit/wp-content/uploads/2018/09/best-island-maldives.jpg" alt="Card image cap" />
-                    <CardBody>
-                        <CardTitle><b>Islands</b></CardTitle>
-                        <CardText>{islands}.</CardText>
-                        <Button>Explore Islands</Button>
-                    </CardBody>
-                    </Card>
-                    <Card>
-                    <CardImg top width="100%" height="300px" src="https://media.mnn.com/assets/images/2015/08/union-wood-sunrise.jpg.653x0_q80_crop-smart.jpg" alt="Card image cap" />
-                    <CardBody>
-                        <CardTitle><b>Forests</b></CardTitle>
-                        <CardText>{forests}</CardText>
-                        <Button>Explore Forests</Button>
-                    </CardBody>
-                    </Card>
-                </CardDeck>
+            <div>
+                <div className="design">
+                    <CardDeck>
+                        <Card>
+                        <CardImg top width="100%" height="300px" src="https://assets.entrepreneur.com/content/3x2/2000/20150513235008-new-york-city-life-sunrise-skyline-sunset.jpeg?width=1000" alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle><b>Cities</b></CardTitle>
+                            <CardText>{cities}</CardText>
+                            <Button>Explore Cities</Button>
+                        </CardBody>
+                        </Card>
+                        <Card>
+                        <CardImg top width="100%" height="300px" src="https://www.bestattravel.co.uk/the-edit/wp-content/uploads/2018/09/best-island-maldives.jpg" alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle><b>Islands</b></CardTitle>
+                            <CardText>{islands}.</CardText>
+                            <Button>Explore Islands</Button>
+                        </CardBody>
+                        </Card>
+                        <Card>
+                        <CardImg top width="100%" height="300px" src="https://media.mnn.com/assets/images/2015/08/union-wood-sunrise.jpg.653x0_q80_crop-smart.jpg" alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle><b>Forests</b></CardTitle>
+                            <CardText>{forests}</CardText>
+                            <Button>Explore Forests</Button>
+                        </CardBody>
+                        </Card>
+                    </CardDeck>
+                </div>
             </div>
         );        
     }
