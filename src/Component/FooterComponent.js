@@ -10,12 +10,13 @@ class FooterComponenet extends React.Component{
                         <div className="col-4 justify-content-center">
                             <h5>Links</h5>
                             <ul className="list-unstyled">
-                                <li><a href="http://localhost:3000/#">Browse Cities</a></li>
-                                <li><a href="http://localhost:3000/#">Browse Islands</a></li>
-                                <li><a href="http://localhost:3000/#">Browse Forests</a></li>
-                                <li><a href="http://localhost:3000/#">Uppload Cities/Islands/Forests</a></li>
-                                <li><a href="http://localhost:3000/#">Bloggers</a></li>
-                                <li><a href="http://localhost:3000/#">About Us</a></li>
+                                <li><a href="http://localhost:3000/exploreCities">Explore Cities</a></li>
+                                <li><a href="http://localhost:3000/exploreIslands">Explore Islands</a></li>
+                                <li><a href="http://localhost:3000/exploreForests">Explore Forests</a></li>
+                                <li><a href="http://localhost:3000/exploreDeserts">Explore Deserts</a></li>
+                                <li><a href="http://localhost:3000/uploadPlace">Uppload Place</a></li>
+                                <li><a href="http://localhost:3000/bloggers">Bloggers</a></li>
+                                <li><a href="http://localhost:3000/aboutUs">About Us</a></li>
                             </ul>
                         </div>
                         <div className="col-4 justify-content-ceter">
