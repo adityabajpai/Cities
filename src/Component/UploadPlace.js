@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card, CardBody, CardHeader, Button } from 'reactstrap';
 import { Form } from 'react-bootstrap';
 
 class UploadPlace extends React.Component{
@@ -43,11 +42,36 @@ class UploadPlace extends React.Component{
                         </div>
                     </div>
                     <br/>
-                    <div className="form-group col-6 justify-content-center">
+                    <div className="container col-6">
+                        <div className="row">
+                            <div className="col-3">
+                                <input type="radio"/>&nbsp;&nbsp;&nbsp;
+                                <label>City</label>
+                            </div>
+                            <div className="col-3">
+                                <input type="radio"/>&nbsp;&nbsp;&nbsp;
+                                <label>Island</label>
+                            </div>
+                            <div className="col-3">
+                                <input type="radio"/>&nbsp;&nbsp;&nbsp;
+                                <label>Forest</label>
+                            </div>
+                            <div className="col-3">
+                                <input type="radio"/>&nbsp;&nbsp;&nbsp;
+                                <label>Desert</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div className="container col-6 justify-content-center">
                         <label for="exampleFormControlTextarea1">Best Things to do</label>
                         <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <br/>
+                    <div className="container col-6 justify-content-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    <br/>
                 </Form>
             </div>
         );

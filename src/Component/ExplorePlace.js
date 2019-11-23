@@ -1,20 +1,26 @@
 import React from 'react';
-import {CITIES} from '../shared/cities';
-import {ISLANDS} from '../shared/islands';
-import {FORESTS} from '../shared/forests';
+import citiesComponent from '../CardComponent/citiesComponent';
+import islandComponent from '../CardComponent/islandComponent';
+import desertComponent from '../CardComponent/desertComponent';
+import forestComponent from '../CardComponent/forestComponent';
 import { Card, CardBody, CardHeader } from 'reactstrap';
 import {Image} from 'react-bootstrap';
+import {withRouter} from 'react-router-dom';
+import {connect} from 'react-redux';
+
+const mapStateToProps = state => {
+    return{
+        cities: state.cities,
+        islands: state.islands,
+        forests: state.forests,
+        deserts: state.deserts
+    }
+}
 
 class ExplorePlaces extends React.Component{
 
     constructor(props){
         super(props);
-
-        this.state = {
-            cities: CITIES,
-            islands: ISLANDS,
-            forests: FORESTS
-        }
     }
 
     render(){
@@ -22,15 +28,8 @@ class ExplorePlaces extends React.Component{
         console.log(window.location.href);
         if(window.location.pathname==='/exploreCities'){
             console.log('Cities');
-            const place = this.state.cities;
+            const place = this.props.cities;
             return place.map((city, index)=>(
-                // <div key={index} className="container">
-                //     <div>
-                //         <h4 style={{marginLeft:"15px", marginTop:"15px"}}>{city.name}</h4>
-                //         <p className="col-8">{city.description}</p>
-                //         <Image className="col-8" height="300px" src={city.image[0]}/>
-                //     </div>
-                // </div>
                 <div key={index} class="container">
                     <Card style={{padding:"20px", borderColor:"#ccc", marginTop:"10px", marginBottom:"50px"}}>
                         <br/>
@@ -67,15 +66,8 @@ class ExplorePlaces extends React.Component{
         }
         else if(window.location.pathname==='/exploreIslands'){
             console.log('Islands');
-            const place = this.state.islands;
+            const place = this.props.islands;
             return place.map((island, index)=>(
-                // <div key={index} className="container">
-                //     <div>
-                //         <h4 style={{marginLeft:"15px", marginTop:"15px"}}>{city.name}</h4>
-                //         <p className="col-8">{city.description}</p>
-                //         <Image className="col-8" height="300px" src={city.image[0]}/>
-                //     </div>
-                // </div>
                 <div key={index} class="container">
                     <Card style={{padding:"20px", borderColor:"#ccc", marginTop:"10px", marginBottom:"50px"}}>
                         <br/>
@@ -111,15 +103,8 @@ class ExplorePlaces extends React.Component{
         else if(window.location.pathname==='/exploreForests'){
             console.log('Yes');
             console.log('Forests');
-            const place = this.state.forests;
+            const place = this.props.forests;
             return place.map((forest, index)=>(
-                // <div key={index} className="container">
-                //     <div>
-                //         <h4 style={{marginLeft:"15px", marginTop:"15px"}}>{city.name}</h4>
-                //         <p className="col-8">{city.description}</p>
-                //         <Image className="col-8" height="300px" src={city.image[0]}/>
-                //     </div>
-                // </div>
                 <div key={index} class="container">
                     <Card style={{padding:"20px", borderColor:"#ccc", marginTop:"10px", marginBottom:"50px"}}>
                         <br/>
@@ -163,8 +148,40 @@ class ExplorePlaces extends React.Component{
         }
         else if(window.location.pathname==='/exploreDeserts'){
             console.log('Yes');
+            console.log('Deserts');
+            const place = this.props.deserts;
+            return place.map((desert, index)=>(
+                <div key={index} class="container">
+                    <Card style={{padding:"20px", borderColor:"#ccc", marginTop:"10px", marginBottom:"50px"}}>
+                        <br/>
+                        <div class="row align-self-center">
+                            <div class="col-8">
+                                <h4>{desert.name}</h4>
+                                <p>{desert.description}</p>
+                                <Image width="100%" height="300px" src={desert.image[0]}/>
+                            </div>
+                            <div class="col-4 align-self-center">
+                            <Card>
+                                <CardHeader className="bg-primary text-white">Details of a City</CardHeader>
+                                <CardBody>
+                                    <dl className="row p-1">
+                                        <dt className="col-6">Size</dt>
+                                        <dd className="col-6">{desert.size}</dd>
+                                        <dt className="col-6">Location</dt>
+                                        <dd className="col-6">{desert.country}</dd>
+                                        <dt className="col-6">Continent</dt>
+                                        <dd className="col-6">{desert.continents}</dd>
+                                    </dl>
+                                </CardBody>
+                            </Card>
+                            </div>
+                        </div>
+                        <br/>
+                    </Card>
+                </div>
+            ));
         }
     }
 }
 
-export default ExplorePlaces;
+export default withRouter(connect(mapStateToProps)(ExplorePlaces));

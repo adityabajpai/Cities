@@ -32,12 +32,14 @@ class FooterComponenet extends React.Component{
                         </div>
                         <div className="col-4 justify-content-center align-self-center">
                             Connect With Us:<br/>
-                            <a href="http://google.com/+"><i className="fa fa-google-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                            <a href="http://www.facebook.com/profile.php?id="><i className="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
-                            <a href="http://www.linkedin.com/in/"><i className="fa fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;<br/>
-                            <a href="http://twitter.com/"><i className="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
-                            <a href="http://youtube.com/"><i className="fa fa-youtube"></i></a>&nbsp;&nbsp;&nbsp;
-                            <a href="mailto:"><i className="fa fa-envelope-o"></i></a>
+                            <div className=" container justify-content-center">
+                                <a href="http://google.com/+"><i className="fa fa-google-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                <a href="http://www.facebook.com/profile.php?id="><i className="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+                                <a href="http://www.linkedin.com/in/"><i className="fa fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;<br/>
+                                <a href="http://twitter.com/"><i className="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                                <a href="http://youtube.com/"><i className="fa fa-youtube"></i></a>&nbsp;&nbsp;&nbsp;
+                                <a href="mailto:"><i className="fa fa-envelope-o"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div className="row justify-content-center">             

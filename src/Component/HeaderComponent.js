@@ -59,7 +59,7 @@ class HeaderComponent extends React.Component{
             <div>
                 <Navbar bg="light" expand="lg" fixed="top">
                     <span className="open-slide">
-                        <a href="/" onClick={this.openSlideMenu}>
+                        <a onClick={this.openSlideMenu}>
                             <svg width="30" height="30">
                                 <path d="M0,5 30,5" stroke="#000" strokeWidth="3"/>
                                 <path d="M0,14 30,14" stroke="#000" strokeWidth="3"/>
@@ -75,16 +75,16 @@ class HeaderComponent extends React.Component{
                         height="30"
                         className="d-inline-block align-top"
                         />
-                        {' itch.io'}
+                        {' PERI'}
                     </Navbar.Brand>
                     <div id="side-menu" className="side-nav">
                         <a href="#" className="btn-close" onClick={this.closeSlideMenu}>&times;</a>
-                        <a href="#horrorGames" >Asia</a>
-                        <a href="#multiplayer" >Europe</a>
-                        <a href="#visualNovels" >Australia</a>
-                        <a href="#htmlGames" >Antarctica</a>
-                        <a href="#simulation" >North America</a>
-                        <a href="#macOSGames" >South America</a>
+                        <a href="#asia" onClick={this.closeSlideMenu}>Asia</a>
+                        <a href="#europe" onClick={this.closeSlideMenu}>Europe</a>
+                        <a href="#australia" onClick={this.closeSlideMenu}>Australia</a>
+                        <a href="#antarctica" onClick={this.closeSlideMenu}>Antarctica</a>
+                        <a href="#northAmerica" onClick={this.closeSlideMenu}>North America</a>
+                        <a href="#southAmerica" onClick={this.closeSlideMenu}>South America</a>
                     </div>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

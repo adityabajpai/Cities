@@ -3,14 +3,13 @@ import {Image} from 'react-bootstrap';
 import '../Style/slide.css'
 
 const image = [
-    "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/aurora.jpg",
-    "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/canyon.jpg",
-    "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg",
-    "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/desert.jpg",
-    "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/mountains.jpg",
-    "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/redsky.jpg",
-    "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/sandy-shores.jpg",
-    "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/tree-of-life.jpg"
+    'https://media.cntraveler.com/photos/5ca60ffcdba130da42d0d834/master/w_820,c_limit/Shanghai_GettyImages-936093364.jpg',
+    'https://themysteriousworld.com/wp-content/uploads/2017/06/arabian-desert.webp',
+    'https://assets3.thrillist.com/v1/image/1674642/size/tl-horizontal_main.jpg',
+    'https://www.planetware.com/photos-large/SEY/best-islands-maldives.jpg',
+    'https://media.cntraveler.com/photos/5ca50d2b274132cadc073bf8/master/w_820,c_limit/Jaipur-India_GettyImages-484718881.jpg',
+    'https://assets3.thrillist.com/v1/image/1674636/size/tl-horizontal_main.jpg',
+    'https://www.planetware.com/photos-large/SEY/best-islands-bali.jpg'
 ];
 
 let i = 0;

@@ -7,7 +7,7 @@ import Bloggers from './Bloggers';
 import UploadPlace from './UploadPlace';
 import AboutUs from './AboutUs';
 import MainComponent from './MainComponent';
-import {Switch, Route, Redirect} from 'react-router-dom';
+import {Switch, Route} from 'react-router-dom';
 
 class LoadComponent extends React.Component{
     render(){
