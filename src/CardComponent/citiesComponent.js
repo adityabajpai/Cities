@@ -3,7 +3,7 @@ import {CITIES} from '../shared/cities';
 import { Card, CardBody, CardHeader } from 'reactstrap';
 import {Image} from 'react-bootstrap';
 
-class desertComponent extends React.Component{
+class citiesComponent extends React.Component{
 
     constructor(props){
         super(props);
@@ -52,4 +52,4 @@ class desertComponent extends React.Component{
     }
 }
 
-export default desertComponent;
+export default citiesComponent;
